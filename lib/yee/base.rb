@@ -1,7 +1,8 @@
 class Base < Thor
   default_task :output
-  desc "", "outputting yee image"
+  desc "", "outputting yee image and play music"
   def output
+    `afplay #{mp3}`
     puts "
 ░░░░░░░░░░░░░░░░░░░░░░░░░░
 ░░░░░░░░░░░░░▄███▄▄▄░░░░░░
@@ -12,9 +13,9 @@ class Base < Thor
 ░░░▐██▄░░▀▄▀▀▄▀░░▄██▀░▐▌░░          ░     ░░░░   ░░░░░
 ░░░█▀█░▀░░░▀▀░░░▀░█▀░░▐▌░░         ░      ░      ░
 ░░░█░░▀▐░░░░░░░░▌▀░░░░░█░░        ░       ░░░░░  ░░░░░░
-░░░█░░░░░░░░░░░░░░░░░░░█░░          
+░░░█░░░░░░░░░░░░░░░░░░░█░░
 ░░░░█░░▀▄░░░░▄▀░░░░░░░░█░░
-░░░░█░░░░░░░░░░░▄▄░░░░█░░░ 
+░░░░█░░░░░░░░░░░▄▄░░░░█░░░
 ░░░░░█▀██▀▀▀▀██▀░░░░░░█░░░
 ░░░░░█░░▀████▀░░░░░░░█░░░░
 ░░░░░░█░░░░░░░░░░░░▄█░░░░░
@@ -28,5 +29,8 @@ class Base < Thor
   desc "--version, -v", "show version"
   def __print_version
     puts Yee::VERSION
-  end  
+  end
+  def mp3
+    File.expand_path('../../../data/yee.mp3', __FILE__)
+  end
 end
