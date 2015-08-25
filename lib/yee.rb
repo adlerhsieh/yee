@@ -1,5 +1,6 @@
 require "yee/version"
+require 'yee/base'
 
 module Yee
-  # Your code goes here...
+
 end

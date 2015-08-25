@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["nkj20932@hotmail.com"]
   spec.summary       = %q{An ascii output exclusively for yee}
   spec.description   = %q{Basically a one-line command line app that outputs yee image.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/nkj20932/yee"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
