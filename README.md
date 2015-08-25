@@ -4,6 +4,22 @@ It does only one thing:
 
 ![](http://i.imgur.com/oPapSla.png)
 
+## What is Yee?
+
+In case you don't know what it is, Yee comes from a cartoon called 'Dinosauri antropomorfi'.
+
+Original clip:
+
+https://www.youtube.com/watch?v=Y52Vpjhr4MU
+
+and someone edited and made it a song:
+
+https://www.youtube.com/watch?v=q6EoRBvdVPQ
+
+and hence it went viral. 
+
+Search 'Yee' on Google or Youtube and you'll find hundreds of them.
+
 ## Installation
 
 Either puts:
